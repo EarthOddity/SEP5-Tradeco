@@ -1,0 +1,9 @@
+{"payment":{
+    "user_id": 1,
+    "payment_method":"mastercard",
+    "card_number": "5577-1234-89076-3247",
+    "total": 3000,
+    "date": "2023-12-05",
+    "address": "Slotsgade 13, Horsens 8700, Denmark"
+}
+}
