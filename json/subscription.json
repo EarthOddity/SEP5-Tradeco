@@ -1,0 +1,7 @@
+{"subscription":[
+    {
+      "fee": "integer",
+      "storage": "smallint",
+      "user_id": "serial references tradeco.user(id) primary key"
+    }
+  ]}

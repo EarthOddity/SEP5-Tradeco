@@ -1,0 +1,59 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "company_name": "Bestseller",
+      "email": "jensjensen@bestseller.dk",
+      "first_name": "Jens",
+      "last_name": "Jensen",
+      "industry": "Clothing",
+      "phone_number": "25458723",
+      "subscription": true,
+      "number_of_posts": 8
+    },
+    {
+      "id": 2,
+      "company_name": "MetalMasters",
+      "email": "sarahmetals@metalmasters.com",
+      "first_name": "Sarah",
+      "last_name": "Smith",
+      "industry": "Metallurgy",
+      "phone_number": "56473829",
+      "subscription": true,
+      "number_of_posts": 5
+    },
+    {
+      "id": 3,
+      "company_name": "TastyBites",
+      "email": "davidchef@tastybites.org",
+      "first_name": "David",
+      "last_name": "Chef",
+      "industry": "Food",
+      "phone_number": "55765432",
+      "subscription": false,
+      "number_of_posts": 7
+    },
+    {
+      "id": 4,
+      "company_name": "BuildItAll",
+      "email": "alexbuilder@builditall.com",
+      "first_name": "Alex",
+      "last_name": "Builder",
+      "industry": "Construction",
+      "phone_number": "52901234",
+      "subscription": true,
+      "number_of_posts": 12
+    },
+    {
+      "id": 5,
+      "company_name": "CozyCorners",
+      "email": "amandafurniture@cozycorners.net",
+      "first_name": "Amanda",
+      "last_name": "Furniture",
+      "industry": "Furniture",
+      "phone_number": "28093427",
+      "subscription": false,
+      "number_of_posts": 6
+    }
+  ]
+}
