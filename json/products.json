@@ -8,7 +8,7 @@
       "price": 200,
       "amount": 400,
       "location": "Horsens",
-      "image": "textile_scraps.png"
+      "image": "cotton.jpg"
     },
     {
       "id": 2,
@@ -42,13 +42,13 @@
     },
     {
       "id": 5,
-      "name": "Recycled Plastic",
+      "name": "Plastic",
       "type": "Plastic",
-      "description": "Eco-friendly recycled plastic materials",
+      "description": "Leftover plastic scrap",
       "price": 50,
       "amount": 500,
       "location": "Aalborg",
-      "image": "recycled_plastic.png"
+      "image": "plastic_scrap.jpg"
     },
     {
       "id": 6,
@@ -58,7 +58,7 @@
       "price": 100,
       "amount": 200,
       "location": "Esbjerg",
-      "image": "rubber_flooring.png"
+      "image": "rubber_flooring.jpg"
     },
     {
       "id": 7,
@@ -68,7 +68,7 @@
       "price": 20,
       "amount": 1000,
       "location": "Roskilde",
-      "image": "cardboard_boxes.png"
+      "image": "cardboard_boxes.jpg"
     },
     {
       "id": 8,
@@ -78,7 +78,7 @@
       "price": 15,
       "amount": 800,
       "location": "Frederiksberg",
-      "image": "recycled_paper.png"
+      "image": "recycled_paper.jpeg"
     },
     {
       "id": 9,
@@ -88,57 +88,37 @@
       "price": 40,
       "amount": 300,
       "location": "Vejle",
-      "image": "birch_wood.png"
+      "image": "birch_wood.jpg"
     },
     {
       "id": 10,
-      "name": "Salmon Fillets",
-      "type": "Food",
-      "description": "Fresh Atlantic salmon fillets",
-      "price": 15,
-      "amount": 200,
-      "location": "Helsingør",
-      "image": "salmon_fillets.png"
-    },
-    {
-      "id": 11,
-      "name": "Silk Fabric",
+      "name": "Polyester Fabric",
       "type": "Textile",
-      "description": "Luxurious silk fabric in various colors",
+      "description": "Polyester fabric in various colors",
       "price": 250,
       "amount": 100,
       "location": "Silkeborg",
-      "image": "silk_fabric.png"
+      "image": "polyester.jpg"
     },
     {
-      "id": 12,
-      "name": "Mahogany Chair",
+      "id": 11,
+      "name": "Furniture",
       "type": "Furniture",
-      "description": "Elegant mahogany chair with leather upholstery",
+      "description": " Different types of furniture that can be refurbished",
       "price": 350,
       "amount": 20,
       "location": "Kolding",
-      "image": "mahogany_chair.png"
+      "image": "furniture.jpg"
     },
     {
-      "id": 13,
-      "name": "Copper Pipes",
+      "id": 12,
+      "name": "Aluminium Pipes",
       "type": "Metal",
-      "description": "High-quality copper pipes for plumbing",
+      "description": "Aluminium pipes, can be used for plumbing",
       "price": 180,
       "amount": 120,
       "location": "Holstebro",
-      "image": "copper_pipes.png"
-    },
-    {
-      "id": 14,
-      "name": "PET Plastic Bottles",
-      "type": "Plastic",
-      "description": "PET plastic bottles for beverage packaging",
-      "price": 30,
-      "amount": 600,
-      "location": "Næstved",
-      "image": "pet_plastic_bottles.png"
+      "image": "pipes.jpg"
     }
   ]
 }

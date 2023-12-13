@@ -1,4 +1,3 @@
-var products = [];
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -9,8 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 this.products = data.product;
                 displayProducts(data.product);
             }).catch(error => console.error('Error fetching products:', error));
-    }
 
+        };
 
     fetchProducts();
 
@@ -22,6 +21,10 @@ document.addEventListener('DOMContentLoaded', function () {
             const productElement = document.createElement('div');
             productElement.className = 'item';
 
+            productElement.addEventListener('click', () => {
+                navigateToProduct(product.id);
+            });
+
             productElement.innerHTML = `
                 <div class="item-img">
                     <img class="itemImg" src="images/${product.image}" height="100px" alt="${product.name} Image">
@@ -32,12 +35,17 @@ document.addEventListener('DOMContentLoaded', function () {
                     <p class="price">Price: DKK ${product.price}</p>
                     <p class="amount">Amount: ${product.amount}</p>
                     <p class="location">${product.location}</p>
-                    <a class="cartButton" href="#">Add to cart</a>
+                    <button class="addToCartButton" type="button" onclick="addToCart(${JSON.stringify(product)})">Add to cart</button>
                 </div>
             `;
-
             itemContainer.appendChild(productElement);
+
         });
+    };
+
+    function navigateToProduct(productId) {
+        // Redirect to the product detail page, passing the product ID as a query parameter
+        window.location.href = `productDetails.html?id=${productId}`;
     }
 
     function filterProductsByType(selectedTypes) {
@@ -48,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
             ? products.filter(product => selectedTypes.includes(product.type))
             : products;
         displayProducts(filteredProducts)
-    }
+    };
 
 
     const checkboxes = document.querySelectorAll('#types input[type="checkbox"]');
@@ -57,36 +65,36 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Keep track of the previously selected types
-    let previousSelectedTypes = [];
+    var previousSelectedTypes = [];
 
     // Function to update the filtered products based on selected checkboxes
     function updateFilteredProducts() {
-        const selectedTypes = Array.from(checkboxes)
+        var selectedTypes = Array.from(checkboxes)
             .filter(checkbox => checkbox.checked)
             .map(checkbox => checkbox.value);
 
         // Compare the selected types with the previous ones
-        const typesChanged = !arraysEqual(selectedTypes, previousSelectedTypes);
+        var typesChanged = !arraysEqual(selectedTypes, previousSelectedTypes);
 
         if (typesChanged) {
             previousSelectedTypes = selectedTypes.slice(); // Update the previous selected types
             filterProductsByType(selectedTypes);
         }
-    }
+    };
 
     // Helper function to check if two arrays are equal
     function arraysEqual(arr1, arr2) {
         return JSON.stringify(arr1) === JSON.stringify(arr2);
-    }
+    };
 
-    const sortOptions = document.getElementById('sortingOptions');
+    var sortOptions = document.getElementById('sortingOptions');
     sortOptions.addEventListener('change', handleSort);
 
     function handleSort(event) {
         const selectedSortOption = event.target.value;
         // Perform sorting based on the selected option
         sortProducts(selectedSortOption);
-    }
+    };
 
     function sortProducts(selectedValue) {
         var sortedProducts = this.products;
@@ -117,15 +125,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// JavaScript to enable the Bootstrap navbar toggler
-var navbarToggler = document.querySelector('.navbar-toggler');
-var navbarCollapse = document.querySelector('.navbar-collapse');
-
-navbarToggler.addEventListener('click', function () {
-    navbarCollapse.classList.toggle('show');
-});
-
-
 function searchProduct() {
     let input = document.getElementById('searchbar').value
     input = input.toLowerCase();
@@ -140,6 +139,39 @@ function searchProduct() {
         }
     }
 };
+
+function setProductId(id) {
+    localStorage.setItem('selectedProductId', id);
+};
+
+var productPosts = [];
+
+function addPost(product) {
+    productPosts.push(product);
+}
+
+function getPosts() {
+    return productPosts;
+}
+
+//Code that adds to the cart
+
+var cartItems = [];
+
+
+function addToCart(product) {
+    updateCartCount();
+    cartItems.push(product)
+}
+
+function updateCartCount() {
+   for (i=0 ; i < cartItems; i++) {
+    document.getElementById('cartCount') = cartItems[i].length;
+   }
+    
+}
+
+
 
 
 

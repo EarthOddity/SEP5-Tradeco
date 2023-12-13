@@ -13,8 +13,7 @@
 
 <body>
     <header>
-        <nav id="navigationBar" class="navbar navbar-expand-sm">
-            <!--Assigned an id to each of the menu bars as I wanted them to have different stylings for each page, and this was the first one.-->
+        <nav id="navigationBar" class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a id="websiteLogo" class="navbar-brand" href="marketplace.html"><img id="logo"
                         src="images\TradEcologo-removebg-preview.png" alt="The Logo of TradEco" height="70px"
@@ -54,60 +53,45 @@
 
     <div class="productWindow">
         <div class="row">
-            <div class="col-2">
-                <img src="images/textile_scraps.png" />
+            <div id="imageContainer" class="col-2">
             </div>
-            <div class="col-2">
-                <p>Home / Menu / Textiles</p>
-                <h1>Product name</h1>
-                <h2>Product type</h2>
-                <h4>$50.00</h4>
-                <h4>Product amount</h4>
-                <h4>Location</h4>
+            <div id="detailsContainer" class="col-2">
+                <p id="productPath"></p>
+                <h1 id="productName"></h1>
+                <h2 id="productType"></h2>
+                <h4 id="productPrice"></h4>
+                <h4 id="productAmount"></h4>
+                <h4 id="productLocation"></h4>
                 <input type="number" value="1">
-                <a href="" class="purchaseButton">Add to cart</a>
+                <a href="#" class="purchaseButton">Add to cart</a>
                 <h3>Product Details</h3>
-                <p>Some detailed info about material, source, provider...</p>
-                <h5>Product ID</h5>
+                <p id="productDescription"></p>
+                <h5 id="productId"></h5>
             </div>
         </div>
     </div>
 
-        <div id="pageBottom">
-            <div id="socialMedia">
-                <h5>Meet us at</h5>
-                <a id="socialLogo" href="#" class="fa fa-facebook"></a>
-                <a id="socialLogo" href="#" class="fa fa-instagram"></a>
-                <a id="socialLogo" href="#" class="fa fa-linkedin"></a>
-            </div>
-            <div id="moreInfo">
-                <h5>More</h5>
-                <ul>
-                    <li>Newsletter</li>
-                    <li>Terms & Conditions</li>
-                    <li>Contact us</li>
-                </ul>
-            </div>
-
+    <footer id="pageBottom">
+        <div id="socialMedia">
+            <h5>Meet us at</h5>
+            <a class="socialLogo" href="#" class="fa fa-facebook"></a>
+            <a class="socialLogo" href="#" class="fa fa-instagram"></a>
+            <a class="socialLogo" href="#" class="fa fa-linkedin"></a>
+        </div>
+        <div id="moreInfo">
+            <h5>More</h5>
+            <ul>
+                <li>Newsletter</li>
+                <li>Terms & Conditions</li>
+                <li>Contact us</li>
+            </ul>
         </div>
 
+    </footer>
 
+
+    <script defer src="js\productDetails.js"></script>
+    <script defer src="js\common.js"></script>
 </body>
 
 </html>
-
-<!-- java code
-function search_product() { 
-    let input = document.getElementById('searchbar').value 
-    input=input.toLowerCase(); 
-    let x = document.getElementsByClassName('item'); 
-      
-    for (i = 0; i < x.length; i++) {  
-        if (!x[i].innerHTML.toLowerCase().includes(input)) { 
-            x[i].style.display="none"; 
-        } 
-        else { 
-            x[i].style.display="list-item";                  
-        } 
-    } 
-}  -->

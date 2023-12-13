@@ -14,8 +14,7 @@
 
 <body>
     <header>
-        <nav id="navigationBar" class="navbar navbar-expand-sm">
-            <!--Assigned an id to each of the menu bars as I wanted them to have different stylings for each page, and this was the first one.-->
+        <nav id="navigationBar" class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a id="websiteLogo" class="navbar-brand" href="marketplace.html"><img id="logo"
                         src="images\TradEcologo-removebg-preview.png" alt="The Logo of TradEco" height="70px"
@@ -38,17 +37,8 @@
                 </div>
             </div>
         </nav>
+
     </header>
-
-    <script>
-        // JavaScript to enable the Bootstrap navbar toggler
-        var navbarToggler = document.querySelector('.navbar-toggler');
-        var navbarCollapse = document.querySelector('.navbar-collapse');
-
-        navbarToggler.addEventListener('click', function () {
-            navbarCollapse.classList.toggle('show');
-        });
-    </script>
 
     <div class="purchaseMethod">
         <div>
@@ -71,12 +61,13 @@
     </div>
 
 
-    <div id="pageBottom">
+    
+    <footer id="pageBottom">
         <div id="socialMedia">
             <h5>Meet us at</h5>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-linkedin"></a>
+            <a class="socialLogo" href="#" class="fa fa-facebook"></a>
+            <a class="socialLogo" href="#" class="fa fa-instagram"></a>
+            <a class="socialLogo" href="#" class="fa fa-linkedin"></a>
         </div>
         <div id="moreInfo">
             <h5>More</h5>
@@ -87,7 +78,12 @@
             </ul>
         </div>
 
-    </div>
+    </footer>
+
+
+    <script defer src="js\payment.js"></script>
+    <script defer src="js\common.js"></script>
+
 
 </body>
 
