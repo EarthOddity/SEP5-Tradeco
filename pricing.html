@@ -14,43 +14,58 @@
 
 <body>
     <header>
-        <nav id="navigationBar" class="navbar navbar-expand-sm">
-            <!--Assigned an id to each of the menu bars as I wanted them to have different stylings for each page, and this was the first one.-->
-            <div class="container-fluid">
-                <a id="websiteLogo" class="navbar-brand" href="marketplace.html"><img id="logo"
-                        src="images\TradEcologo-removebg-preview.png" alt="The Logo of TradEco" height="70px"
-                        width="260px" /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a id="navNames" class="nav-link active" href="">Homepage</a></li>
-                        <li class="nav-item-active"><a id="navNames" class="nav-link active"
-                                href="marketplace.html">Marketplace</a></li>
-                        <li class="nav-item"><a id="navNames" class="nav-link active" href="About_us.html">About us</a>
-                        </li>
-                        <li class="nav-item"><a id="navNames" class="nav-link active" href="pricing.html">Pricing</a>
-                        </li>
-                        <li class="nav-item"><a id="navNames" class="nav-link active" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
+        <header>
+            <nav id="navigationBar" class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a id="websiteLogo" class="navbar-brand" href="marketplace.html"><img id="logo"
+                            src="images\TradEcologo-removebg-preview.png" alt="The Logo of TradEco" height="70px"
+                            width="260px" /></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a id="navNames" class="nav-link active" href="homepage.html">Homepage</a>
+                            </li>
+                            <li class="nav-item-active"><a id="navNames" class="nav-link active"
+                                    href="marketplace.html">Marketplace</a></li>
+                            <li class="nav-item"><a id="navNames" class="nav-link active" href="aboutUs.html">About us</a>
+                            </li>
+                            <li class="nav-item"><a id="navNames" class="nav-link active" href="pricing.html">Pricing</a>
+                            </li>
+                            <li class="nav-item"><a id="navNames" class="nav-link active" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex">
+                        <button class="btn btn-outline-light" id="custom-btn-margin">
+                            <i class="fa fa-shopping-cart"></i> <span id="cartCount">0</span>
+                        </button>
+                        <button class="btn btn-outline-light">
+                            <i class="fa fa-user"></i> Profile
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-
-    <script>
-        // JavaScript to enable the Bootstrap navbar toggler
-        var navbarToggler = document.querySelector('.navbar-toggler');
-        var navbarCollapse = document.querySelector('.navbar-collapse');
-
-        navbarToggler.addEventListener('click', function () {
-            navbarCollapse.classList.toggle('show');
-        });
-    </script>
-
+            </nav>
+        </header>
     <div class="pricing">
+        <div class="plan-container">
+            <div class="plan">
+                <h4>Free plan</h4>
+                <ul>
+                    <li>feature one</li>
+                    <li>feature two</li>
+                    <li>feature three</li>
+                    <li>feature four</li>
+                    <li>feature five</li>
+                </ul>
+                <a href="placeOrder.html" class="proceedButton"><span>Purchase</span></a>
+            </div>
+            <div class="icon">
+                <img id="planIcon1" src="images/FreeIcon.png" alt="Free Plan Icon" height="160px" width="140px">
+            </div>
+        </div>
+
         <div class="plan-container">
             <div class="plan">
                 <h4>Basic plan</h4>
@@ -61,10 +76,10 @@
                     <li>feature four</li>
                     <li>feature five</li>
                 </ul>
-                <a href="placeOrder.html"><button class="proceedButton"><span>Purchase</span></button></a>
+                <a href="placeOrder.html" class="proceedButton"><span>Purchase</span></a>
             </div>
             <div class="icon">
-                <img id="planIcon1" src="images/IconEco1.png" alt="Basic Plan Icon" height="180px" width="175px">
+                <img id="planIcon1" src="images/BasicIcon.png" alt="Basic Plan Icon" height="180px" width="175px">
             </div>
         </div>
 
@@ -78,17 +93,16 @@
                     <li>feature four</li>
                     <li>feature five</li>
                 </ul>
-                <a href="placeOrder.html"><button class="proceedButton"><span>Purchase</span></button></a>
+                <a href="placeOrder.html" class="proceedButton"><span>Purchase</span></a>
             </div>
             <div class="icon">
-                <img id="planIcon2" src="images/IconEco2.png" alt="Premium Plan Icon" height="150px" width="140px">
+                <img id="planIcon2" src="images/PremiumIcon.png" alt="Premium Plan Icon" height="180px" width="175px">
             </div>
         </div>
     </div>
 
-
-    <div id="pageBottom">
-        <div id="socialMedia">
+    <footer id="pageBottom">
+        <div id="socialMedia"> <!--This section would have the links to the official social media of the company-->
             <h5>Meet us at</h5>
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-instagram"></a>
@@ -97,13 +111,15 @@
         <div id="moreInfo">
             <h5>More</h5>
             <ul>
-                <li>Newsletter</li>
-                <li>Terms & Conditions</li>
-                <li>Contact us</li>
+                <li><a href="#">Newsletter</a></li> <!--This would have the link to the newsletter-->
+                <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran">Terms & Conditions</li>
+                <li><a href="contact.html">Contact us</a></li>
             </ul>
         </div>
 
-    </div>
+
+    <script src="js\common.js"></script>
+
 
 </body>
 

@@ -1,4 +1,6 @@
 
+var products = [];
+
 document.addEventListener('DOMContentLoaded', function () {
 
     function fetchProducts() {
@@ -34,8 +36,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     <h4 class="productTitle">${product.name}</h4>
                     <p class="price">Price: DKK ${product.price}</p>
                     <p class="amount">Amount: ${product.amount}</p>
+                    <p class="date">Date: ${product.date}</p>
                     <p class="location">${product.location}</p>
-                    <button class="addToCartButton" type="button" onclick="addToCart(${JSON.stringify(product)})">Add to cart</button>
+                   <button class="btn btn-primary" onclick="addToCart(event)">Add to Cart</button>
                 </div>
             `;
             itemContainer.appendChild(productElement);
@@ -106,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 sortedProducts.sort((a, b) => a.price - b.price);
                 break;
             case 'DateNew':
-                sortedProducts.sort((a, b) => new Date(b.date) - new Date(b.date));
+                sortedProducts.sort((a, b) => new Date(b.date) - new Date(a.date));
                 break;
             case 'DateOld':
                 sortedProducts.sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -144,35 +147,23 @@ function setProductId(id) {
     localStorage.setItem('selectedProductId', id);
 };
 
-var productPosts = [];
+function addToCart(event) {
+    // Prevent the default behavior (e.g., redirection) of the click event
+    event.preventDefault();
 
-function addPost(product) {
-    productPosts.push(product);
+    // Stop the event from propagating up or down the DOM hierarchy
+    event.stopPropagation();
+
+    // Get the current cart count
+    var cartCountElement = document.getElementById('cartCount');
+    var currentCount = parseInt(cartCountElement.innerText);
+
+    // Increment the cart count
+    var newCount = currentCount + 1;
+
+    // Update the cart count element
+    cartCountElement.innerText = newCount;
 }
-
-function getPosts() {
-    return productPosts;
-}
-
-//Code that adds to the cart
-
-var cartItems = [];
-
-
-function addToCart(product) {
-    updateCartCount();
-    cartItems.push(product)
-}
-
-function updateCartCount() {
-   for (i=0 ; i < cartItems; i++) {
-    document.getElementById('cartCount') = cartItems[i].length;
-   }
-    
-}
-
-
-
 
 
 

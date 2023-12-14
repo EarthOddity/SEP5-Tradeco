@@ -7,6 +7,7 @@
       "description": "Leftover cotton in different colours",
       "price": 200,
       "amount": 400,
+      "date": "2023-12-05",
       "location": "Horsens",
       "image": "cotton.jpg"
     },
@@ -17,6 +18,7 @@
       "description": "Steel scrap from industrial processes",
       "price": 300,
       "amount": 200,
+      "date": "2023-12-13",
       "location": "Horsens",
       "image": "steel_scrap.jpg"
     },
@@ -27,6 +29,7 @@
       "description": "Recycled cardboard scraps for crafting",
       "price": 50,
       "amount": 3000,
+      "date": "2023-12-08",
       "location": "Aarhus",
       "image": "cardboard_scrap.jpeg"
     },
@@ -37,6 +40,7 @@
       "description": "Skin, bone, tendon scraps from beef",
       "price": 150,
       "amount": 600,
+      "date": "2023-12-05",
       "location": "Aarhus",
       "image": "meat_scrap.jpg"
     },
@@ -47,6 +51,7 @@
       "description": "Leftover plastic scrap",
       "price": 50,
       "amount": 500,
+      "date": "2023-12-04",
       "location": "Aalborg",
       "image": "plastic_scrap.jpg"
     },
@@ -57,6 +62,7 @@
       "description": "Durable rubber flooring for various applications",
       "price": 100,
       "amount": 200,
+      "date": "2023-12-09",
       "location": "Esbjerg",
       "image": "rubber_flooring.jpg"
     },
@@ -67,6 +73,7 @@
       "description": "Sturdy cardboard boxes for packaging",
       "price": 20,
       "amount": 1000,
+      "date": "2023-12-10",
       "location": "Roskilde",
       "image": "cardboard_boxes.jpg"
     },
@@ -77,6 +84,7 @@
       "description": "High-quality recycled paper for printing",
       "price": 15,
       "amount": 800,
+      "date": "2023-12-11",
       "location": "Frederiksberg",
       "image": "recycled_paper.jpeg"
     },
@@ -87,6 +95,7 @@
       "description": "Natural birch wood planks for DIY projects",
       "price": 40,
       "amount": 300,
+      "date": "2023-12-04",
       "location": "Vejle",
       "image": "birch_wood.jpg"
     },
@@ -97,6 +106,7 @@
       "description": "Polyester fabric in various colors",
       "price": 250,
       "amount": 100,
+      "date": "2023-12-05",
       "location": "Silkeborg",
       "image": "polyester.jpg"
     },
@@ -107,6 +117,7 @@
       "description": " Different types of furniture that can be refurbished",
       "price": 350,
       "amount": 20,
+      "date": "2023-12-03",
       "location": "Kolding",
       "image": "furniture.jpg"
     },
@@ -117,6 +128,7 @@
       "description": "Aluminium pipes, can be used for plumbing",
       "price": 180,
       "amount": 120,
+      "date": "2023-12-07",
       "location": "Holstebro",
       "image": "pipes.jpg"
     }

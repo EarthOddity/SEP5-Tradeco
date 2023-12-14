@@ -12,8 +12,7 @@
 
 <body>
     <header>
-        <nav id="navigationBar" class="navbar navbar-expand-sm">
-            <!--Assigned an id to each of the menu bars as I wanted them to have different stylings for each page, and this was the first one.-->
+        <nav id="navigationBar" class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a id="websiteLogo" class="navbar-brand" href="marketplace.html"><img id="logo"
                         src="images\TradEcologo-removebg-preview.png" alt="The Logo of TradEco" height="70px"
@@ -23,87 +22,191 @@
                 </button>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a id="navNames" class="nav-link active" href="">Homepage</a></li>
-                        <li class="nav-item-active"><a id="navNames" class="nav-link active" href="marketplace.html">Marketplace</a></li>
-                        <li class="nav-item"><a id="navNames" class="nav-link active" href="About_us.html">About us</a></li>
-                        <li class="nav-item"><a id="navNames" class="nav-link active" href="pricing.html">Pricing</a></li>
-                        <li class="nav-item"><a id="navNames" class="nav-link active" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a id="navNames" class="nav-link active" href="homepage.html">Homepage</a>
+                        </li>
+                        <li class="nav-item-active"><a id="navNames" class="nav-link active"
+                                href="marketplace.html">Marketplace</a></li>
+                        <li class="nav-item"><a id="navNames" class="nav-link active" href="aboutUs.html">About us</a>
+                        </li>
+                        <li class="nav-item"><a id="navNames" class="nav-link active" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item"><a id="navNames" class="nav-link active" href="contact.html">Contact</a>
+                        </li>
                     </ul>
+                </div>
+                <div class="d-flex">
+                    <button class="btn btn-outline-light" id="custom-btn-margin">
+                        <i class="fa fa-shopping-cart"></i> <span id="cartCount">0</span>
+                    </button>
+                    <button class="btn btn-outline-light">
+                        <i class="fa fa-user"></i> Profile
+                    </button>
                 </div>
             </div>
         </nav>
     </header>
-    
-    <script>
-        // JavaScript to enable the Bootstrap navbar toggler
-        var navbarToggler = document.querySelector('.navbar-toggler');
-        var navbarCollapse = document.querySelector('.navbar-collapse');
 
-        navbarToggler.addEventListener('click', function () {
-            navbarCollapse.classList.toggle('show');
-        });
-    </script>
-    <div id="main_content">
-        <div id="stextsubdi">
-            <div>
-                <img id="logo" src="images/TradEcologo.jpeg" alt="The Logo of TradEco" />
-            </div>
-            <div>
-                <h3>Our Vision</h3>
-                <p>Why we do what we do, who are we</p>
-                <p>Born out of the prevailing social landscape, TradEco aims to tackle three diverse obstacles faced by
-                    present-day societies.</p>
-                <div>
-                    <ul>
-                        <li>
-                            <figure><img src="images/Old Business Model.png"
-                                    alt="The representation of a business model" title="Old Business Model">
-                                <figcaption>Old Business Model</figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure><img src="images/Waste Overproduction.png" alt="Bins are overflowing"
-                                    title="Waste Overproduction">
-                                <figcaption>Waste Overproduction</figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure><img src="images/Lack of Sustainability Partnerships.png"
-                                    alt="Two companies that did not get to an agreement"
-                                    title="Lack of Sustainability Partnerships">
-                                <figcaption>Lack of Sustainability Partnerships between Businesses</figcaption>
-                            </figure>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <div class="about-us-section row row-no-padding">
+        <div class="slogan-aboutus col-md-6">
+            <h2>Waste does not have to be the end -</h2> 
+            <h2>it can be a new beginning.</h2>
+            <h3>As we shape our mission with dedication,</h3>
+            <h4>we leave a positive impact on the world today and in the future.</h4>
         </div>
-        <div>
-            <img id='Stockfoto' src="" alt="Stockfoto">
-            <p>“Overconsumption will have direct consequences for future generations.” What can possibly be done?</p>
-        </div>
-        <div id='ndtextsubdi'>
-            <h3>Circular Economy</h3>
-            <h5>A new model that has arrived, not to break the mould, but to renovate it.</h5>
-            <p>Circular Economy is a pattern of production and consumption where the materials and products in the
-                economic cycle are kept with the highest possible value for as long as possible. It focuses on the
-                creation of circular habits, such as repurposing or reusing. Also, it is about demolishing the barriers
-                between individuals to create a cooperative chain that will ensure a greater future.</p>
-        </div>
-        <div>
-            <img id='Stockfoto' src="" alt="Stockfoto">
-            <p>“Waste does not have to be the end - it can be a new beginning.”</p>
-        </div>
-        <div id='rdtextsubdi'>
-            <h3> Wanna Join? </h3>
-            <div>
-                <p> Become a seller</p>
-                <p> Become a buyer</p>
-            </div>
+        <div class="wide-photo-container">
+            <img src="images/aboutus-pic.png" alt="About Us Background" class="img-fluid wide-photo">
         </div>
     </div>
-    <div id='footer'>
-        <div id="socialMedia">
+
+    <div class="history-section">
+        <div class="history-text">
+            <h2>Our History</h2>
+            <hr>
+
+            <p>
+                In the vibrant year of 2023, TradEco was born out of a shared vision among our passionate founders.
+                Fueled
+                by a collective desire to address pressing challenges faced by modern societies, we embarked on a
+                journey to
+                redefine waste management and instigate positive environmental change.
+            </p>
+            <br>
+            <br>
+            <h4>The Spark Of Innovation</h4>
+            <hr>
+            <p>
+                The seeds of TradEco were sown when our co-founders, inspired by the urgency of environmental issues,
+                envisioned a platform that would revolutionize waste trading. With a commitment to sustainability and a
+                belief that waste could be transformed into a valuable resource, the idea took root.
+            </p>
+            <br>
+            <br>
+            <h4>From Concept to Reality</h4>
+            <hr>
+            <p>
+                Over the years, TradEco has evolved into a pioneering force in the circular economy, challenging the
+                traditional business models and advocating for a more sustainable and collaborative approach. Our
+                journey
+                has been marked by innovative solutions, dedicated teamwork, and a relentless commitment to making a
+                positive impact on the planet.
+            </p>
+        </div>
+        <div class="history-photo">
+            <img src="images/history-photo.png" alt="History Photo" class="img-fluid wide-photo">
+        </div>
+    </div>
+
+
+
+
+
+
+    <p>
+    <h1 id="contactHeader" class="text-center">Contact us!</h1>
+    </p>
+
+    <div class="teamMembers">
+        <div class="Ginta">
+            <figure>
+                <img id="profilePic" src="images/Ginta.jpeg" alt="Ginta Bilinska" width="180" height="190">
+                <h6 class="memberH">Co-founder</h6>
+                <figcaption>
+                    <p class="membertxt">
+                        Ginta Bilinska
+                        <br>
+                        Phone: +45 55021383
+                        <br>
+                        <a class="fa fa-facebook-square" aria-hidden="true"></a>
+                        <a class="fa fa-envelope" aria-hidden="true" href="mailto:316353@via.dk"></a>
+                        <a id="socialLogo" href="https://www.linkedin.com/in/ginta-bilinska-7092ab221/"
+                            class="fa fa-linkedin"></a>
+                    </p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="Ale">
+            <figure>
+                <img id="profilePic" src="images/Ale.jpeg" alt="Alejandro Bautista Martin" width="180" height="190">
+                <h6 class="memberH">Co-founder</h6>
+                <figcaption>
+                    <p class="membertxt">
+                        Alejandro Bautista Martin
+                        <br>
+                        Phone: +45 54096721
+                        <br>
+                        <a class="fa fa-facebook-square" aria-hidden="true"></a>
+                        <a class="fa fa-envelope" aria-hidden="true" href="mailto:316344@via.dk"></a>
+                        <a id="socialLogo" href="https://www.linkedin.com/in/alejandro-bautista-martin-73a073227/"
+                            class="fa fa-linkedin"></a>
+                    </p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="Martyna">
+            <figure>
+                <img id="profilePic" src="images/Marty.jpeg" alt="Martyna Niezgodzka" width="190" height="190">
+                <h6 class="memberH">Co-founder</h6>
+                <figcaption>
+                    <p class="membertxt">
+                        Martyna Niezgodzka
+                        <br>
+                        Phone: +45 42091371
+                        <br>
+                        <a class="fa fa-facebook-square" aria-hidden="true"></a>
+                        <a class="fa fa-envelope" aria-hidden="true" href="mailto:316354@via.dk"></a>
+                        <a id="socialLogo" href="https://www.linkedin.com/in/martyna-niezgodzka-6a9827220/"
+                            class="fa fa-linkedin"></a>
+                    </p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="Wojciech">
+            <figure>
+                <img id="profilePic" src="images/Wojciech.jpeg" alt="Wojciech Juan Padilla Chrobok" width="180"
+                    height="190">
+                <h6 class="memberH">Co-founder</h6>
+                <figcaption>
+                    <p class="membertxt">
+                        Wojciech Chrobok
+                        <br>
+                        Phone: +45 16028375
+                        <br>
+                        <a class="fa fa-facebook-square" aria-hidden="true"></a>
+                        <a class="fa fa-envelope" aria-hidden="true" href="mailto:316350@via.dk"></a>
+                        <a id="socialLogo" href="https://www.linkedin.com/in/w-padilla-chrobok/"
+                            class="fa fa-linkedin"></a>
+                    </p>
+                </figcaption>
+            </figure>
+        </div>
+
+
+        <div class="Miko">
+            <figure>
+                <img id="profilePic" src="images/Miko.jpeg" alt="Mikołaj Olejnik" width="180" height="190">
+                <h6 class="memberH">Co-founder</h6>
+                <figcaption>
+                    <p class="membertxt">
+                        Mikołaj Olejnik
+                        <br>
+                        Phone: +45 89072376
+                        <br>
+                        <a class="fa fa-facebook-square" aria-hidden="true"></a>
+                        <a class="fa fa-envelope" aria-hidden="true" href="mailto:316334@via.dk"></a>
+                        <a id="socialLogo" href="https://www.linkedin.com/in/mikolaj-olejnik-256864226/"
+                            class="fa fa-linkedin"></a>
+                    </p>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+
+
+    <footer id="pageBottom">
+        <div id="socialMedia"> <!--This section would have the links to the official social media of the company-->
             <h5>Meet us at</h5>
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-instagram"></a>
@@ -112,12 +215,15 @@
         <div id="moreInfo">
             <h5>More</h5>
             <ul>
-                <li><a href="#">Newsletter</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Newsletter</a></li> <!--This would have the link to the newsletter-->
+                <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran">Terms & Conditions</li>
+                <li><a href="#contactHeader">Contact us</a></li>
             </ul>
         </div>
-    </div>
+
+
+        <script src="js\common.js"></script>
+
 </body>
 
 </html>

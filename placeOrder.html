@@ -24,10 +24,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a id="navNames" class="nav-link active" href="">Homepage</a></li>
+                        <li class="nav-item"><a id="navNames" class="nav-link active" href="homepage.html">Homepage</a>
+                        </li>
                         <li class="nav-item-active"><a id="navNames" class="nav-link active"
                                 href="marketplace.html">Marketplace</a></li>
-                        <li class="nav-item"><a id="navNames" class="nav-link active" href="About_us.html">About us</a>
+                        <li class="nav-item"><a id="navNames" class="nav-link active" href="aboutUs.html">About us</a>
                         </li>
                         <li class="nav-item"><a id="navNames" class="nav-link active" href="pricing.html">Pricing</a>
                         </li>
@@ -35,16 +36,23 @@
                         </li>
                     </ul>
                 </div>
+                <div class="d-flex">
+                    <button class="btn btn-outline-light" id="custom-btn-margin">
+                        <i class="fa fa-shopping-cart"></i> <span id="cartCount">0</span>
+                    </button>
+                    <button class="btn btn-outline-light">
+                        <i class="fa fa-user"></i> Profile
+                    </button>
+                </div>
             </div>
         </nav>
-
     </header>
 
     <div class="placeOrderForm">
         <div>
             <form>
                 <fieldset class="purchaseFields">
-                    <legend>Contact information:</legend>
+                    <legend>Payment</legend>
                     <label for="cname">Company name:</label><br>
                     <input type="text" id="cname" name="cname"><br>
                     <label for="address">Address:</label><br>
@@ -56,39 +64,43 @@
                     <input type="text" id="email" name="email"><br>
                     <label for="phoneNo">Phone number:</label><br>
                     <input type="text" id="phoneNo" name="phoneNo"><br>
-                    <a href="payment.html"><button class="proceedButton"><span>Payment</span></button></a>
+                    <legend>Payment method</legend>
+                    <input type="radio" id="card" name="radio">
+                    <label for="card">Credit Card</label><br>
+                    <label for="cardNo">Card number:</label><br>
+                    <input type="text" id="cardNo" name="cardNo"><br>
+                    <p id="total">Total: </p>
+                    <p id="date">Date: </p>
+                    <a class="proceedButton" href="confirmation.html"><span>Payment</span></a>
                 </fieldset>
             </form>
         </div>
     </div>
-
+    <br>
 
     <footer id="pageBottom">
-        <div id="socialMedia">
+        <div id="socialMedia"> <!--This section would have the links to the official social media of the company-->
             <h5>Meet us at</h5>
-            <a class="socialLogo" href="#" class="fa fa-facebook"></a>
-            <a class="socialLogo" href="#" class="fa fa-instagram"></a>
-            <a class="socialLogo" href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
         </div>
         <div id="moreInfo">
             <h5>More</h5>
             <ul>
-                <li>Newsletter</li>
-                <li>Terms & Conditions</li>
-                <li>Contact us</li>
+                <li><a href="#">Newsletter</a></li> <!--This would have the link to the newsletter-->
+                <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran">Terms & Conditions</li>
+                <li><a href="aboutUs.html/#contactHeader">Contact us</a></li>
             </ul>
         </div>
 
-    </footer>
 
+    <script src="js\common.js"></script>
 
-    <script defer src="js\placeOrder.js"></script>
-    <script defer src="js\common.js"></script>
+    <script src="js\common.js"></script>
 
 
 </body>
-
-
 
 
 </html>
