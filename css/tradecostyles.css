@@ -567,48 +567,46 @@ video {
 /* text on video*/
 
 .slogan {
-
     position: absolute;
     text-align: center;
+    justify-content: center;
     color: #c8f99a;
     /* Adjust the text color as needed */
 }
 
-.slogan h2 {
-    font-size: 40px;
-    font-weight: bold;
+#slogan2 
+{
+    text-align: center;
 }
 
-.slogan h3 {
-    padding-right: 160px;
-    padding-top: 160px;
-    font-size: 20px;
-    font-weight: bold;
+
+
+.history-section li {
+    margin-left: 0px;
+    margin-bottom: 10px;
+    color:#1a5862;
+    list-style: disc;
 }
 
-.slogan h4 {
-    padding-right: 230px;
-
-    font-size: 20px;
-    font-weight: bold;
-}
 
 /*button "sign in" on homepage*/
+
 
 .sign-in-button {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 1.2em;
     text-decoration: none;
-    background-color: #4CAF50;
+    background-color: rgb(76, 175, 137);
     color: #fff;
     border-radius: 5px;
     margin-top: 15px;
-    transition: background-color 0.3s ease;
+    margin-right: 5%;
+    min-width: 50px;
+    height: auto;
 }
 
 .sign-in-button:hover {
-    background-color: #45a049;
+    background-color: #587d5a;
 }
 
 /*button "learn more" on homepage*/
@@ -652,10 +650,8 @@ video {
 .lm-photos {
     display: flex;
     flex-wrap: wrap;
-    float: left;
-    padding-left: 170px;
-    padding-top: 150px;
-    padding-bottom: 100px;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .howitworks {

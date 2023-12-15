@@ -21,7 +21,7 @@ document.getElementById('loginButton').addEventListener('click', function() {
     // Event listener for the close button
     closeButton.addEventListener("click", closeLoginModal);
 
-    // Event listener for the submit button (assuming you have a submit button in your HTML)
+    // Event listener for the submit button 
     submitButton.addEventListener("click", closeLoginModal);
 
     // Event listener to close the modal when clicking outside the modal

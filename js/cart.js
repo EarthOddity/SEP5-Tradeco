@@ -44,5 +44,23 @@ removeButtons.forEach(function (button) {
     button.addEventListener('click', removeCartItem);
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    // Get the form and the button
+    var checkoutForm = document.getElementById('checkoutForm');
+    var proceedButton = document.getElementById('proceedButton');
+
+    // Add an event listener to the form
+    checkoutForm.addEventListener('input', function () {
+        // Check if all input fields are filled
+        var isFormValid = Array.from(checkoutForm.elements).every(function (element) {
+            return element.tagName !== 'BUTTON' || element.checkValidity();
+        });
+
+        // Enable or disable the button based on form validity
+        proceedButton.disabled = !isFormValid;
+    });
+});
+
+
 
 

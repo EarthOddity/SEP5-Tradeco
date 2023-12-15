@@ -1,26 +1,26 @@
+//Example user//
 
-/* Sample JSON object with user information*/
-var userData = {
-    firstName: "John",
-    lastName: "Doe",
-    phoneNumber: "123-456-7890",
-    email: "john.doe@example.com",
-
-    companyName: "Example Company",
-    industry: "Technology",
-    foundedYear: "2000",
-    website: "https://www.example.com",
-
-    addressLine1: "123 Main Street",
-    addressLine2: "Apt 456",
-    country: "United States",
-    city: "Cityville",
-    postalCode: "12345",
-
+   var userData = {
+    firstName: "Jens",
+    lastName: "Jensen",
+    phoneNumber: "25458723",
+    email: "jensjensen@bestseller.dk",
+    
+    companyName: "Bestseller",
+    industry: "Clothing",
+    foundedYear: "2008",
+    website: "https://www.bestseller.dk",
+   
+    addressLine1: "123 Vejlevej",
+    addressLine2: "10",
+    country: "Denmark",
+    city: "Aarhus",
+    postalCode: "8000",
+   
     currentPassword: "currentPassword123",
     newPassword: "newPassword456",
     confirmPassword: "newPassword456"
-
+    
 };
 
 
@@ -139,3 +139,47 @@ function saveFields(formId) {
 }
 
 displayUserInfo();
+
+
+//The following code would display the user info fetched from the json and apply to the document
+
+document.addEventListener('DOMContentLoaded', function () {
+function fetchUserInfo(userId) {
+    fetch('users.json')
+    .then(response => response.json())
+    .then(data => {
+        const user = data.user.find(user => user.id === parseInt(userId));
+        if (product) {
+            displayUserInformation(user);
+        } else {
+            console.error('User not found');
+        }
+        })
+        .catch(error => console.error('Error fetching user information:', error));
+}
+
+// Demonstration purpose: the information for user with ID 1
+fetchUserInfo(1);
+
+const profileContent = document.getElementById('#profile-content')
+
+function displayUserInformation(user)
+ {
+    var firstName = profileContent.querySelector('firstNameValue');
+    var lastName = profileContent.querySelector('lastNameValue');
+    var phoneNumber = profileContent.querySelector('phoneNumberValue');
+    var email = profileContent.querySelector('emailValue');
+    var companyName = profileContent.querySelector('companyNameValue');
+    var industry = profileContent.querySelector('industryValue');
+    var profilePictureUrl = profileContent.querySelector('profilePic');
+
+
+    firstName.textContent = `${user.first_name}`;
+    lastName.textContent = user.last_name;
+    phoneNumber.textContent = user.phone_number;
+    email.textContent = user.email;
+    companyName.textContent = user.company_name;
+    industry.textContent = user.industry;
+    profilePictureUrl.textContent = "";
+ }
+});

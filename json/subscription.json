@@ -1,7 +1,17 @@
 {"subscription":[
     {
-      "fee": "integer",
-      "storage": "smallint",
-      "user_id": "serial references tradeco.user(id) primary key"
+      "fee": 27500,
+      "storage": "300 sqm",
+      "user_id": "1"
+    },
+    {
+      "fee": 0,
+      "storage": "0",
+      "user_id": "2"
+    },
+    {
+      "fee": 27500,
+      "storage": "300 sqm",
+      "user_id": "3"
     }
   ]}
