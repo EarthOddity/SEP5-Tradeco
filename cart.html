@@ -33,17 +33,19 @@
                         </li>
                         <li class="nav-item"><a id="navNames" class="nav-link active" href="pricing.html">Pricing</a>
                         </li>
-                        <li class="nav-item"><a id="navNames" class="nav-link active" href="contact.html">Contact</a>
-                        </li>
                     </ul>
                 </div>
-                <div class="d-flex">
-                    <button id="shoppingCartButton" class="btn btn-outline-light" id="custom-btn-margin">
-                        <i class="fa fa-shopping-cart"></i> <span id="cartCount">0</span>
-                    </button>
-                    <button id="profileButton" class="btn btn-outline-light">
-                        <i class="fa fa-user"></i> Profile
-                    </button>
+                <button class="btn btn-outline-light me-2">
+                    <i class="fa fa-shopping-cart"></i> <span id="cartCount">0</span>
+                </button>
+                <button class="btn btn-outline-light dropdown-toggle" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-user"></i> Profile
+                  </button>
+                  <div id="profileDropdownMenu" aria-labelledby="profileDropdown" class="dropdown-menu" data-bs-popper>
+                    <a class="dropdown-item" href="profile.html">Profile</a>
+                    <a class="dropdown-item" href="login.html">Login</a>
+                    <a class="dropdown-item" href="register.html">Register</a>
+                  </div>
                 </div>
             </div>
         </nav>
@@ -73,10 +75,10 @@
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
 
-                    <label for="email">Phone Number</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="phoneNo">Phone Number</label>
+                    <input type="phoneNo" id="phoneNo" name="phoneNo" required>
 
-                    <button type="submit" class="btn btn-primary">Submit Order</button>
+                    <button id="submitOrderButton" type="submit" class="btn btn-primary">Submit Order</button>
                 </form>
             </div>
 
@@ -86,13 +88,13 @@
                 <!-- Example Item 1 -->
                 <div class="card mb-3">
                     <div class="card-body">
-                        <h5 class="item-title">Textile</h5>
+                        <h5 class="item-title">Cotton</h5>
                         <div class="item-wrapper">
-                            <img src="images/textile_scraps.png" alt="Textile Image" />
+                            <img src="images/cotton.jpg" alt="Cotton Image" />
                         </div>
-                        <p class="card-text">Description of the product.</p>
-                        <p class="card-text">Quantity: 2</p>
-                        <p class="card-text">Price: $20.00</p>
+                        <p class="card-text">Leftover cotton in different colours.</p>
+                        <p class="card-text">Amount: 400</p>
+                        <p class="card-text">Price: DKK 200</p>
                         <button class="btn btn-danger">Remove</button>
                     </div>
                 </div>
@@ -100,13 +102,13 @@
                 <!-- Example Item 2 -->
                 <div class="card mb-3">
                     <div class="card-body">
-                        <h5 class="item-title">Steel</h5>
+                        <h5 class="item-title">Cardboard</h5>
                         <div class="item-wrapper">
-                            <img src="images/steel_scrap.jpg" alt="Steel Image" />
+                            <img src="images/cardboard_scrap.jpeg" alt="Cardboard Image" />
                         </div>
-                        <p class="card-text">Description of the product.</p>
-                        <p class="card-text">Quantity: 1</p>
-                        <p class="card-text">Price: $15.00</p>
+                        <p class="card-text">Recycled cardboard scraps for crafting.</p>                        </p>
+                        <p class="card-text">Amount: 1000</p>
+                        <p class="card-text">Price: DKK 1</p>
                         <button class="btn btn-danger">Remove</button>
                     </div>
                 </div>
@@ -126,12 +128,12 @@
             <ul>
                 <li><a href="#">Newsletter</a></li> <!--This would have the link to the newsletter-->
                 <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran">Terms & Conditions</li>
-                <li><a href="contact.html">Contact us</a></li>
             </ul>
         </div>
 
 
     <script src="js\common.js"></script>
+    <script src="js/marketplace.js"></script>
 
 
 </body>

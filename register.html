@@ -29,15 +29,18 @@
             </li>
             <li class="nav-item"><a id="navNames" class="nav-link active" href="pricing.html">Pricing</a>
             </li>
-            <li class="nav-item"><a id="navNames" class="nav-link active" href="aboutUs.html#contactHeader">Contact</a>
-            </li>
           </ul>
         </div>
-        <div class="d-flex">
-          <button class="btn btn-outline-light">
-            <i class="fa fa-user"></i> Profile
-          </button>
+        <button class="btn btn-outline-light dropdown-toggle" type="button" id="profileDropdown"
+          data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-user"></i> Profile
+        </button>
+        <div id="profileDropdownMenu" aria-labelledby="profileDropdown" class="dropdown-menu" data-bs-popper>
+          <a class="dropdown-item" href="profile.html">Profile</a>
+          <a class="dropdown-item" href="login.html">Login</a>
+          <a class="dropdown-item" href="register.html">Register</a>
         </div>
+      </div>
       </div>
     </nav>
   </header>
@@ -567,18 +570,6 @@
             <option value="ZW">Zimbabwe</option>
           </select>
         </div>
-        <div class="mb-3">
-          <label for="materials" class="form-label">
-            Materials
-          </label><br>
-          <form action="/action_page.php">
-            <input type="checkbox" id="material1" name="material1" value="Textile">
-            <label for="material1"> Textile </label><br>
-            <input type="checkbox" id="material2" name="material2" value="Steel">
-            <label for="material3"> Steel </label><br>
-            <input type="checkbox" id="material3" name="material3" value="Cardboard">
-            <label for="material3"> Cardboard </label><br><br>
-        </div>
     </div>
 
     <button type="submit" class="btn btn-primary">Submit</button>
@@ -599,11 +590,10 @@
       <ul>
         <li><a href="#">Newsletter</a></li> <!--This would have the link to the newsletter-->
         <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran">Terms & Conditions</li>
-        <li><a href="contact.html">Contact us</a></li>
       </ul>
     </div>
 
-
+  </footer>
     <script src="js\common.js"></script>
 
 </body>

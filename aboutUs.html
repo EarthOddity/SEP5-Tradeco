@@ -30,17 +30,16 @@
                         </li>
                         <li class="nav-item"><a id="navNames" class="nav-link active" href="pricing.html">Pricing</a>
                         </li>
-                        <li class="nav-item"><a id="navNames" class="nav-link active" href="contact.html">Contact</a>
-                        </li>
                     </ul>
                 </div>
-                <div class="d-flex">
-                    <button class="btn btn-outline-light" id="custom-btn-margin">
-                        <i class="fa fa-shopping-cart"></i> <span id="cartCount">0</span>
-                    </button>
-                    <button class="btn btn-outline-light">
-                        <i class="fa fa-user"></i> Profile
-                    </button>
+                <button class="btn btn-outline-light dropdown-toggle" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-user"></i> Profile
+                  </button>
+                  <div id="profileDropdownMenu" aria-labelledby="profileDropdown" class="dropdown-menu" data-bs-popper>
+                    <a class="dropdown-item" href="profile.html">Profile</a>
+                    <a class="dropdown-item" href="login.html">Login</a>
+                    <a class="dropdown-item" href="register.html">Register</a>
+                  </div>
                 </div>
             </div>
         </nav>
@@ -48,8 +47,7 @@
 
     <div class="about-us-section row row-no-padding">
         <div class="slogan-aboutus col-md-6">
-            <h2>Waste does not have to be the end -</h2> 
-            <h2>it can be a new beginning.</h2>
+            <h2>Rethink. Reuse. Repurpose.</h2> 
             <h3>As we shape our mission with dedication,</h3>
             <h4>we leave a positive impact on the world today and in the future.</h4>
         </div>
@@ -102,10 +100,10 @@
 
 
     <p>
-    <h1 id="contactHeader" class="text-center">Contact us!</h1>
+    <h1 class="text-center">Contact us!</h1>
     </p>
 
-    <div class="teamMembers">
+    <div id="contactHeader" class="teamMembers">
         <div class="Ginta">
             <figure>
                 <img id="teamProfilePic" src="images/Ginta.jpeg" alt="Ginta Bilinska" width="180" height="190">
@@ -217,9 +215,9 @@
             <ul>
                 <li><a href="#">Newsletter</a></li> <!--This would have the link to the newsletter-->
                 <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran">Terms & Conditions</li>
-                <li><a href="#contactHeader">Contact us</a></li>
             </ul>
         </div>
+    </footer>
 
 
         <script src="js\common.js"></script>

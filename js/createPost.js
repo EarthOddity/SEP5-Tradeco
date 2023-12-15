@@ -35,6 +35,7 @@ function submitProduct() {
 }
 //Form script
 
+
 document.getElementById("quantity").addEventListener("input", function () {
     document.getElementById("quantityValue").innerText = "Quantity: " + this.value + " MT";
     document.getElementById("quantityInput").value = this.value;
@@ -45,14 +46,14 @@ document.getElementById("quantityInput").addEventListener("input", function () {
     document.getElementById("quantityValue").innerText = "Quantity: " + this.value + " MT";
 });
 
-document.getElementById("newProductPrice").addEventListener("input", function () {
-    document.getElementById("newProductPriceValue").innerText = "Price: " + this.value + " DKK";
-    document.getElementById("newPriceInput").value = this.value;
+document.getElementById("price").addEventListener("input", function () {
+    document.getElementById("priceValue").innerText = "Price: " + this.value + " DKK";
+    document.getElementById("priceInput").value = this.value;
 });
 
-document.getElementById("newPriceInput").addEventListener("input", function () {
-    document.getElementById("newProductPrice").value = this.value;
-    document.getElementById("newProductPriceValue").innerText = "Price: " + this.value + " DKK";
+document.getElementById("priceInput").addEventListener("input", function () {
+    document.getElementById("price").value = this.value;
+    document.getElementById("priceValue").innerText = "Price: " + this.value + " DKK";
 });
 
 document.addEventListener("click", submitProduct());

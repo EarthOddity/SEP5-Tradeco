@@ -148,7 +148,7 @@ function setProductId(id) {
 };
 
 function addToCart(event) {
-    // Prevent the default behavior (e.g., redirection) of the click event
+    // Prevent the default behavior of the click event
     event.preventDefault();
 
     // Stop the event from propagating up or down the DOM hierarchy

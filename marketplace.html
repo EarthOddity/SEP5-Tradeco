@@ -30,17 +30,22 @@
                         </li>
                         <li class="nav-item"><a id="navNames" class="nav-link active" href="pricing.html">Pricing</a>
                         </li>
-                        <li class="nav-item"><a id="navNames" class="nav-link active" href="contact.html">Contact</a>
-                        </li>
                     </ul>
                 </div>
                 <div class="d-flex">
-                    <button id="shoppingCartButton" class="btn btn-outline-light" id="custom-btn-margin">
-                        <i class="fa fa-shopping-cart"></i> <span id="cartCount">0</span>
+                    <button id="shoppingCartButton" class="btn btn-outline-light">
+                        <a href="cart.html"><i class="fa fa-shopping-cart"></i> <span id="cartCount">0</span></a>
                     </button>
-                    <button id="profileButton" class="btn btn-outline-light">
+                    <button  class="btn btn-outline-light dropdown-toggle" type="button" id="profileDropdown"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-user"></i> Profile
                     </button>
+                    <div id="profileDropdownMenu" aria-labelledby="profileDropdown" class="dropdown-menu"
+                        data-bs-popper>
+                        <a class="dropdown-item" href="profile.html">Profile</a>
+                        <a class="dropdown-item" href="login.html">Login</a>
+                        <a class="dropdown-item" href="register.html">Register</a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -105,13 +110,14 @@
             <ul>
                 <li><a href="#">Newsletter</a></li> <!--This would have the link to the newsletter-->
                 <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran">Terms & Conditions</li>
-                <li><a href="contact.html">Contact us</a></li>
             </ul>
         </div>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js\marketplace.js"></script>
-    <script src="js\common.js"></script>
+    </footer>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js\marketplace.js"></script>
+        <script src="js\common.js"></script>
 
 </body>
 

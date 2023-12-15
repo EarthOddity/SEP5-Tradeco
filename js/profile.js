@@ -1,3 +1,7 @@
+document.getElementById('createPostButton').addEventListener('click', function() {
+    window.location.href = 'createPost.html';
+  });
+
 //Example user//
 
    var userData = {

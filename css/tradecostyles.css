@@ -79,6 +79,7 @@ h1 {
     text-align: left;
 }
 
+
 ul {
     list-style: none;
 }
@@ -246,11 +247,62 @@ h5 {
     text-align: center;
 }
 
+ 
+ 
+ /* Add margin and padding to the header */
+#navigationBar {
+    margin-bottom: 20px;
+}
+
+#websiteLogo {
+    margin-right: 20px;
+}
+
+#shoppingCartButton,
+#profileButton {
+    margin-left: 10px;
+}
+
+/* Add margin and padding to the product details */
+.productWindow {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
 
 .productWindow img {
-    width: 250px;
-    overflow: auto;
-    float: left;
+    width: 300px;
+}
+
+.productWindow h3 {
+    font-size: 22px;
+}
+
+#imageContainer {
+    padding: 20px;
+}
+
+#detailsContainer {
+    padding: 20px;
+}
+
+.purchaseButton {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: fit-content;
+}
+
+.purchaseButton:hover {
+    background-color: #0056b3;
 }
 
 /*AboutUs page*/
@@ -415,14 +467,19 @@ margin-left: 300px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    width: 500px;
+    min-width: fit-content;
+    min-height: fit-content;
     justify-content: space-between;
-    background-color: rgb(239, 239, 239);
+    background-color: rgb(255, 255, 255);
     margin: 20px;
     padding: 25px;
     border: 1px solid #9d9d9d;
     border-radius: 15px;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
 }
+
+
 
 .placeOrderForm {
     display: flex;
@@ -793,7 +850,6 @@ button:hover {
 #cartItems {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
     padding-right: 20px;
     padding-left: 20px;
@@ -801,7 +857,7 @@ button:hover {
 }
 
 .card {
-    max-width: fit-content;
+    min-width: fit-content;
     padding: 10px;
     margin-bottom: 20px;
     background-color: #fff;
@@ -1030,6 +1086,16 @@ form {
         margin-right: 0; 
         margin-bottom: 10px; 
     }
+}
+
+#createPostButton {
+    margin-left: 20px;
+}
+
+
+#registerModal {
+margin: 40px;
+margin-right: 200px;
 }
 
 

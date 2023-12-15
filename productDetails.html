@@ -31,17 +31,22 @@
                         </li>
                         <li class="nav-item"><a id="navNames" class="nav-link active" href="pricing.html">Pricing</a>
                         </li>
-                        <li class="nav-item"><a id="navNames" class="nav-link active" href="contact.html">Contact</a>
-                        </li>
                     </ul>
                 </div>
                 <div class="d-flex">
-                    <button id="shoppingCartButton" class="btn btn-outline-light" id="custom-btn-margin">
+                    <button id="shoppingCartButton" class="btn btn-outline-light me-2">
                         <i class="fa fa-shopping-cart"></i> <span id="cartCount">0</span>
                     </button>
-                    <button id="profileButton" class="btn btn-outline-light">
+                    <button class="btn btn-outline-light dropdown-toggle" type="button" id="profileDropdown"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-user"></i> Profile
                     </button>
+                    <div id="profileDropdownMenu" aria-labelledby="profileDropdown" class="dropdown-menu"
+                        data-bs-popper>
+                        <a class="dropdown-item" href="profile.html">Profile</a>
+                        <a class="dropdown-item" href="login.html">Login</a>
+                        <a class="dropdown-item" href="register.html">Register</a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -50,10 +55,9 @@
     <!--Single product details: -->
 
     <div class="productWindow">
-        <div class="row">
-            <div id="imageContainer" class="col-2">
+            <div id="imageContainer">
             </div>
-            <div id="detailsContainer" class="col-2">
+            <div id="detailsContainer">
                 <p id="productPath"></p>
                 <h1 id="productName"></h1>
                 <h2 id="productType"></h2>
@@ -66,7 +70,6 @@
                 <p id="productDescription"></p>
                 <h5 id="productId"></h5>
             </div>
-        </div>
     </div>
 
     <footer id="pageBottom">
@@ -81,9 +84,9 @@
             <ul>
                 <li><a href="#">Newsletter</a></li> <!--This would have the link to the newsletter-->
                 <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran">Terms & Conditions</li>
-                <li><a href="contact.html">Contact us</a></li>
             </ul>
         </div>
+    </footer>
 
 
     <script src="js\productDetails.js"></script>

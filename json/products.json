@@ -27,7 +27,7 @@
       "name": "Cardboard",
       "type": "Cardboard",
       "description": "Recycled cardboard scraps for crafting",
-      "price": 50,
+      "price": 1,
       "amount": 3000,
       "date": "2023-12-08",
       "location": "Aarhus",
